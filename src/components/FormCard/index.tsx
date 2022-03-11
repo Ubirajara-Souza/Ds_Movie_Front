@@ -27,8 +27,8 @@ function FormCard({movieId}: Props) {
 
         event.preventDefault();
 
-        const email = (event.target as any).email.valid;
-        const score = (event.target as any).score.valid;
+        const email = (event.target as any).email.value;
+        const score = (event.target as any).score.value;
 
         if (!validateEmail(email)) {
             return;
